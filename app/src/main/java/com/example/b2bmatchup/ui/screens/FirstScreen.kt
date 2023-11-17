@@ -3,13 +3,16 @@ package com.example.b2bmatchup.ui.screens
 import android.widget.Button
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.width
 import androidx.compose.material3.Button
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
@@ -35,47 +38,72 @@ fun FirstScreen(
     modifier:Modifier=Modifier
 ){
 
-    Column(
-        verticalArrangement = Arrangement.Top,
-        horizontalAlignment = Alignment.CenterHorizontally,
-        modifier = modifier.padding(top = 120.dp)
-    ) {
-        Image(
-            painter = painterResource(id = R.drawable.logo),
-            contentDescription = null,
-            modifier.size(200.dp,200.dp)
-        )
-        Spacer(modifier = modifier.height(20.dp))
-        Text(
-            text = stringResource(R.string.slogan),
-            fontSize = 24.sp,
-            textAlign = TextAlign.Center
-        )
-        Spacer(modifier = modifier.height(130.dp))
-        Button(
-            onClick = { onSearchButtonClicked },
-            modifier= Modifier
-                .fillMaxWidth(1f)
-                .height(65.dp)
-                .padding(start = 15.dp, end = 15.dp)
+    Box {
+        Column(
+            verticalArrangement = Arrangement.Top ,
+            modifier = modifier
+        ) {
+            Image(
+                painter = painterResource(id = R.drawable.circle__2_),
+                contentDescription = null,
+                modifier = modifier.size(250.dp,255.dp)
+            )
+        }
+        Column(
+            horizontalAlignment = Alignment.End
+        ) {
+            Spacer(modifier = modifier.height(150.dp))
+            Row {
+                Spacer(modifier = modifier.width(260.dp))
+                Image(
+                    painter = painterResource(id = R.drawable.circle__3_),
+                    contentDescription = null,
+                    modifier = modifier.size(250.dp,255.dp)
+                )
+            }
+        }
+        Column(
+            verticalArrangement = Arrangement.Top,
+            horizontalAlignment = Alignment.CenterHorizontally,
+            modifier = modifier.padding(top = 120.dp)
+        ) {
+            Image(
+                painter = painterResource(id = R.drawable.logo),
+                contentDescription = null,
+                modifier.size(200.dp, 200.dp)
+            )
+            Spacer(modifier = modifier.height(20.dp))
+            Text(
+                text = stringResource(R.string.slogan),
+                fontSize = 24.sp,
+                textAlign = TextAlign.Center
+            )
+            Spacer(modifier = modifier.height(130.dp))
+            Button(
+                onClick = { onSearchButtonClicked },
+                modifier = Modifier
+                    .fillMaxWidth(1f)
+                    .height(65.dp)
+                    .padding(start = 15.dp, end = 15.dp)
 
 
-        ){
-            Text(text = stringResource(id = R.string.search), fontSize = 30.sp)
-        }
-        Spacer(modifier = modifier.height(30.dp))
-        Button(
-            onClick = { onLogInNextButtonClicked },
-            modifier = Modifier
-                .fillMaxWidth(1f)
-                .height(65.dp)
-                .padding(start = 15.dp, end = 15.dp)
-        )
-        {
-            Text(text = stringResource(id = R.string.login), fontSize = 30.sp)
-        }
-        TextButton(onClick = { onSignUpButtonClicked }) {
-            Text(text = stringResource(id = R.string.signup))
+            ) {
+                Text(text = stringResource(id = R.string.search), fontSize = 30.sp)
+            }
+            Spacer(modifier = modifier.height(30.dp))
+            Button(
+                onClick = { onLogInNextButtonClicked },
+                modifier = Modifier
+                    .fillMaxWidth(1f)
+                    .height(65.dp)
+                    .padding(start = 15.dp, end = 15.dp)
+            )
+            {
+                Text(text = stringResource(id = R.string.login), fontSize = 30.sp)
+            }
+            TextButton(onClick = { onSignUpButtonClicked }) {
+                Text(text = stringResource(id = R.string.signup))
+            }
         }
     }
 

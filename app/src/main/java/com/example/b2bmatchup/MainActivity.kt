@@ -10,6 +10,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.example.b2bmatchup.ui.screens.FirstScreen
 import com.example.b2bmatchup.ui.screens.GetStartedScreen
 import com.example.b2bmatchup.ui.theme.B2BMatchUpTheme
 
@@ -23,9 +24,8 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    GetStartedScreen(
-                        onNextClicked = {  }
-                    )
+                    //GetStartedScreen( onNextClicked = {  } )
+                    FirstScreen({}, {}, {})
                 }
             }
         }
