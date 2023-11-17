@@ -37,7 +37,7 @@ fun GetStartedScreen(
         modifier = modifier.padding(top = 120.dp)
     ){
         Image(
-            painter = painterResource(id = R.drawable.group),
+            painter = painterResource(id = R.drawable.logo),
             contentDescription = null,
             modifier.size(200.dp,200.dp)
         )
