@@ -5,6 +5,8 @@
     <string name="search">Search</string>
     <string name="login">Log In</string>
     <string name="signup">Sign Up</string>
+    <string name="get_started">Get Started</string>
+    <string name="first_screen">First Screen</string>
 
     <string name="choose_service">Choose Service</string>
     <string name="choose_a_company">Choose a Company</string>

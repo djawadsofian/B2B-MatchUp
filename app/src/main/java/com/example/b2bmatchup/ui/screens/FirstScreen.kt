@@ -80,7 +80,7 @@ fun FirstScreen(
             )
             Spacer(modifier = modifier.height(130.dp))
             Button(
-                onClick = { onSearchButtonClicked },
+                onClick = onSearchButtonClicked ,
                 modifier = Modifier
                     .fillMaxWidth(1f)
                     .height(65.dp)
@@ -92,7 +92,7 @@ fun FirstScreen(
             }
             Spacer(modifier = modifier.height(30.dp))
             Button(
-                onClick = { onLogInNextButtonClicked },
+                onClick = onLogInNextButtonClicked,
                 modifier = Modifier
                     .fillMaxWidth(1f)
                     .height(65.dp)
@@ -101,7 +101,7 @@ fun FirstScreen(
             {
                 Text(text = stringResource(id = R.string.login), fontSize = 30.sp)
             }
-            TextButton(onClick = { onSignUpButtonClicked }) {
+            TextButton(onClick = onSignUpButtonClicked ) {
                 Text(text = stringResource(id = R.string.signup))
             }
         }

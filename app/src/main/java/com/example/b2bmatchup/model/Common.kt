@@ -63,8 +63,7 @@ fun PasswordSection(
     }
     TextField(
         value = password,
-        onValueChange = {
-                        },
+        onValueChange = { password = it},
         label = { Text(text = stringResource(id = requiredField)) },
         placeholder = { Text(text = stringResource(id = label)) },
         leadingIcon = { Icon(imageVector = icon , contentDescription = null) },
