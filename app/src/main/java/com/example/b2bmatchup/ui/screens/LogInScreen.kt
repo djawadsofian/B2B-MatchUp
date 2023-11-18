@@ -42,6 +42,7 @@ import com.example.b2bmatchup.ui.theme.Shapes
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun LogInScreen(
+    onLogInClicked: () -> Unit,
     modifier: Modifier = Modifier
 ){
     val primaryColor = MaterialTheme.colorScheme.primary

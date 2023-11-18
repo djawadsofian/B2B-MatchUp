@@ -10,6 +10,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
+import com.example.b2bmatchup.ui.screens.ChooseServiceScreen
 import com.example.b2bmatchup.ui.screens.FirstScreen
 import com.example.b2bmatchup.ui.screens.GetStartedScreen
 import com.example.b2bmatchup.ui.screens.LogInScreen
@@ -56,8 +57,16 @@ fun B2BMatchUpApp (){
                 })
         }
         composable(route = B2BMatchUpScreen.LogIn.name){
-            LogInScreen()
+            LogInScreen(
+                onLogInClicked = {
+                    navController.navigate(B2BMatchUpScreen.UpdateCompanyScreen.name)
+                }
+            )
         }
+        composable(route = B2BMatchUpScreen.ChooseService.name){
+            ChooseServiceScreen()
+        }
+
     }
 }
 
