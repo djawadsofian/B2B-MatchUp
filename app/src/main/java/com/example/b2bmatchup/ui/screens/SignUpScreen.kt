@@ -25,40 +25,11 @@ import com.example.b2bmatchup.R
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun SignUpScreen() {
-    Scaffold(
-        topBar = {
-            AppBar(B2BMatchUpScreen.SignUp.title)
-        }
-    ) {innerPadding ->
 
-        
-    }
 
 }
 
-@OptIn(ExperimentalMaterial3Api::class)
-@Composable
-fun AppBar (@StringRes title: Int) {
-    TopAppBar(
-        title = {
-            Row(
-                modifier = Modifier.fillMaxWidth(),
-                horizontalArrangement = Arrangement.SpaceBetween
-            ) {
-                Button(onClick = { /*TODO*/ }) {
-                    Icon(imageVector = Icons.Default.ArrowBack, contentDescription = null)
-                }
 
-
-                Text(text = stringResource(id = title))
-                Image(
-                    painter = painterResource(id = R.drawable.group_removebg_preview),
-                    contentDescription = null
-                )
-            }
-        }
-    )
-}
 
 
 
