@@ -49,9 +49,7 @@ fun RequiredSection(
     )
 
 }
-data class m(
-        var moh: String
-        )
+
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun PasswordSection(

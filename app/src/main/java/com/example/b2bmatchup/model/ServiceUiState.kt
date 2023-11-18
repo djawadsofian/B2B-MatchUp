@@ -1,6 +1,17 @@
 package com.example.b2bmatchup.model
 // todo : if not back-end
 data class ServiceUiState(
-    //something to escape from the error
-    val something: Char
+
+    val companyName: String ="" ,
+    val email: String ="",
+    val password: String ="",
+    val companyDescription: String ="",
+    val serviceType: String ="",
+    val detailedDescription: String ="",
+    val companiesCollaboratedWith: String ="",
+    val phoneN1: String ="",
+    val phoneN2: String ="",
+    val emailContact: String ="",
+    val companyUrl: String =""
+
 )
