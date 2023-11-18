@@ -32,7 +32,8 @@ fun ChooseServiceCard(){
     Card {
         Row {
             Card {
-                Icon(painter = , contentDescription = )
+                Icon(painter =
+                    , contentDescription = )
             }
 
         }

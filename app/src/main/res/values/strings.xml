@@ -28,4 +28,18 @@
     <string name="email_label">name@example.com</string>
     <string name="password">Password</string>
     <string name="password_label">write a string password</string>
+
+    <string name="company_name">Company Name *</string>
+    <string name="company_name_label">companyname</string>
+    <string name="company_description">Company Description *</string>
+    <string name="company_description_label">Describe your selves</string>
+    <string name="service_type">Service Type *</string>
+    <string name="service_type_label">ex:transportation</string>
+
+    <string name="already_have_an_account">Already have an Account?</string>
+
+
+
+
+
 </resources>
